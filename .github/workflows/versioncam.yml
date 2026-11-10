@@ -24,6 +24,10 @@ jobs:
       - uses: versioncam/action@v1
         with:
           working-directory: apps/web
+      - uses: versioncam/action@v1
+        with:
+          mode: render
+          working-directory: apps/web
 
   # On v2: record every clip, then publish the recordings to version.cam.
   publish:
